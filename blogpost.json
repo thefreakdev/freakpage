@@ -1,0 +1,42 @@
+[
+    {
+        "image": "./assets/blog/freak1.png",
+        "link": "https://medium.com/@freakcloud/imagine-freak-cloud-first-decentralized-data-storage-run-on-smart-contract-and-beyond-662f3dd689e9",
+        "title": "Imagine Freak Cloud: First decentralized data storage run on smart contract and beyond",
+        "date": "October 15, 2022",
+        "source": "Medium",
+        "description": "Introducing Freak Cloud: Community-powered decentralized data storage on zkSync and its innovation",
+        "tag": "freak+pin",
+        "linksource": "https://medium.com/@freakcloud"
+    },
+    {
+        "image": "./assets/blog/freak2.png",
+        "link": "https://medium.com/@freakcloud/imagine-freak-cloud-first-decentralized-data-storage-run-on-smart-contract-and-beyond-662f3dd689e9",
+        "title": "Freak Cloud report #0: Picking the best compression algorithm",
+        "date": "October 15, 2022",
+        "source": "Medium",
+        "description": "Evaluating compression algorithms for optimized decentralized data storage performance on zkSync",
+        "tag": "freak",
+        "linksource": "https://medium.com/@freakcloud"
+    },
+    {
+        "image": "./assets/blog/other2.png",
+        "link": "https://cryptodevs.substack.com/p/scaling-blockchains-101-part-2",
+        "title": "Scaling blockchains 101 part 2",
+        "date": "June 27, 2023",
+        "source": "Catto's Substack",
+        "description": "Hmmm, what's next?",
+        "tag": "blog",
+        "linksource": "https://substack.com/@catto"
+    },
+    {
+        "image": "./assets/blog/other1.png",
+        "link": "https://cryptodevs.substack.com/p/scaling-blockchains-101-part-1",
+        "title": "Scaling blockchains 101 part 1",
+        "date": "June 27, 2023",
+        "source": "Catto's Substack",
+        "description": "Hmmm, what are some practical ways to scale a blockchain network?",
+        "tag": "blog",
+        "linksource": "https://substack.com/@catto"
+    }
+]

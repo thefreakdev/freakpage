@@ -1,0 +1,22 @@
+.text-logo{
+  background: linear-gradient(180deg, #63F8EF 20.83%, #347EEC 46.88%, #F224B9 72.4%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.fade {
+  animation: fadeEffect 4s infinite;
+}

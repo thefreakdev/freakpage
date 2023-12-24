@@ -1,0 +1,1190 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6WS3S9JF6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z6WS3S9JF6');
+  </script>
+  <link href="./assets/logo.jpg" rel="icon">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./other.css" rel="stylesheet">
+  <link href="./slide.css" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet" rel="stylesheet">
+
+  <script async src="./test.js"></script>
+
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <title>Freak Cloud</title>
+</head>
+<body>
+  <!--main page--> 
+  <div class ="">
+    <!--Nav bar-->
+    <div class="flex justify-center">
+      <div class ="flex h-16 w-full bg-white items-center sm:pl-16 max-w-screen-2xl z-30">
+        <div class="flex h-10 w-full z-10 justify-between ">
+          <!--Logo-->
+          <div class ="text-logo font-bold px-2 items-center flex h-10 sm:pl-4 pl-8 z-50">
+            <img class="sm:h-full h-8 z-40" src ="assets/freak-cloud-logo.svg"/>
+          </div>
+          
+          <!--Desktop menu list-->
+          <div class ="hidden navappear:flex z-10 items-center xl:gap-x-16 md:gap-x-4 gap-x-2 md:pr-4 pr-2 ">
+            <!--Material drowpdown-->
+            <div class="relative inline-block text-left" id="dropdown-container">
+              <button class="inline-flex justify-center items-center px-4 py-4 text-medium font-medium border border-transparent rounded-md focus:outline-none">
+                Resources
+                <svg class="w-5 h-5 ml-2 -mr-1 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="dropdown" class="hidden absolute left-0 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a href="./docs" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-fcblue hover:text-white" role="menuitem">Documentation</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-800 hover:text-white" role="menuitem">Developer docs</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-800 hover:text-white" role="menuitem">Github</a>
+                </div>
+              </div>
+            </div>
+            
+            <!--Learn drowpdown-->
+            <div class="relative inline-block text-left" id="dropdown-container2">
+              <button class="inline-flex justify-center items-center px-4 py-4 text-medium font-medium border border-transparent rounded-md focus:outline-none">
+                Learn
+                <svg class="w-5 h-5 ml-2 -mr-1 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="dropdown2" class="hidden absolute left-0 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-800 hover:text-white" role="menuitem">Quick start</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-800 hover:text-white" role="menuitem">Whitepaper</a>
+                  <a href="./blog.html" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-fcblue hover:text-white" role="menuitem">Blog</a>
+                </div>
+              </div>
+            </div>
+            <!--How to use drowpdown-->
+            <div class="relative inline-block text-left" id="dropdown-container3">
+              <button class="inline-flex justify-center items-center px-4 py-4 text-medium font-medium border border-transparent rounded-md focus:outline-none">
+                How to use
+                <svg class="w-5 h-5 ml-2 -mr-1 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="dropdown3" class="hidden absolute left-0 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-800 hover:text-white" role="menuitem">How to store data</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-800 hover:text-white" role="menuitem">How to provide storage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Button-->
+          <div class="navappear:flex hidden lg:pr-16 md:pr-4">
+            <div class="  relative inline-block text-left " id="get-started-dropdown-container">
+              <button class="px-6 py-5 flex w-fit h-5/6 lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl bg-black text-white hover:bg-fcblue"  id="get-started-button">
+                Get started
+              </button>
+              <div id="get-started-dropdown" class="hidden absolute left-0 w-full mt-1 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a onclick="document.querySelector('.upload-page').scrollIntoView({ behavior: 'smooth' });" class="block px-4 py-2 text-sm font-bold hover:bg-fcblue hover:text-white " role="menuitem">Upload and retrieve data</a>
+                  <a onclick="document.querySelector('.provide-page').scrollIntoView({ behavior: 'smooth' });" class="block px-4 py-2 text-sm font-bold hover:bg-fcblue hover:text-white" role="menuitem">Provide storage and earn</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+          
+          
+        <!-- Full-Screen Overlay -->
+        <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 opacity-0 pointer-events-none transition duration-300 z-10" id="fullscreen-overlay">
+        </div>
+
+        <!--Logo on overlay-->
+        <div class ="absolute text-logo font-bold px-2 items-center flex h-10 sm:pl-4 pl-8 z-50 opacity-100 opacity-0 pointer-events-none transition duration-300 z-10" id="fullscreen-overlay">
+          <img class="sm:h-full h-8 z-40" src ="assets/freak-cloud-logo.svg"/>
+        </div>
+
+
+        <!-- Mobile menu button -->
+        <button class="mobile-menu-button z-20 navappear:hidden sm:pr-20 pr-4 overlay-menu-btn " onclick="toggleMenu()">
+            <div class="overlay-menu-line overlay-menu-line1 bg-black "></div>
+            <div class="overlay-menu-line overlay-menu-line2 bg-black "></div>
+        </button>
+
+      </div>
+    </div>
+
+      <!-- mobile menu -->
+        <div class="absolute hidden inline-block text-left w-full mobile-menu " id="mobile-navbar">
+
+          <div class="flex flex-col ">
+            <!-- Get started -->
+            <button class="flex items-center w-full py-2 text-left px-4 font-bold z-50 pl-20 bg-opacity-80 text-white text-lg">
+              <span class="pr-2">
+                Get started
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="inline mr-2 h-4 w-4 fill-white"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+              <div class="hidden flex flex-col pl-24 bg-opacity-80 z-50">
+                <a onclick="document.querySelector('.upload-page').scrollIntoView({ behavior: 'smooth' }); toggleMenu();" class="py-2 px-4 font-semibold text-white hover:bg-fcblue">Upload and retrieve data
+                </a>
+                <a onclick="document.querySelector('.provide-page').scrollIntoView({ behavior: 'smooth' }); toggleMenu();" class="py-2 px-4 font-semibold text-white hover:bg-fcblue">Host data and earn
+                </a>
+              </div>
+                          
+            <!-- Resources -->
+            <button class="flex items-center w-full py-2 text-left px-4 z-50 pl-20 bg-opacity-80 text-white font-bold text-lg">
+              <span class="pr-2">
+                Resources 
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="inline mr-2 h-4 w-4 fill-white"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="hidden flex flex-col pl-24 bg-opacity-80 z-50 text-white font-semibold">
+              <a href="./docs" target="_blank" class="py-2 px-4 text-white font-semibold hover:bg-fcblue">Documentation</a>
+              <a href="#" class="py-2 px-4 text-white font-semibold hover:text-white hover:bg-yellow-800">Developer docs</a>
+              <a href="#" class="py-2 px-4 text-white font-semibold hover:text-white hover:bg-yellow-800">Github</a>
+            </div>
+        
+            <!-- Learn -->
+            <button class="flex items-center w-full py-2 text-left px-4 font-bold z-50 pl-20 bg-opacity-80 text-white text-lg">
+              <span class="pr-2">
+                Learn
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="inline mr-2 h-4 w-4 fill-white"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="hidden flex flex-col pl-24 bg-opacity-80 z-50">
+              <a href="#" class="py-2 px-4 text-white font-semibold hover:text-white hover:bg-yellow-800 ">Quick start</a>
+              <a href="#" class="py-2 px-4 text-white font-semibold hover:text-white ">Whitepaper</a>
+              <a href="./blog.html" target="_blank" class="py-2 px-4 text-white font-semibold hover:bg-fcblue">Blog</a>
+            </div>
+        
+            <!-- How to use -->
+            <button class="flex items-center w-full py-2 text-left px-4 font-bold z-50 pl-20 bg-opacity-80 text-white text-lg">
+              <span class="pr-2">
+                How to use
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="inline mr-2 h-4 w-4 fill-white"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="hidden flex flex-col pl-24 bg-opacity-80 z-50">
+              <a href="#" class="py-2 px-4 text-white font-semibold hover:text-white hover:bg-yellow-800">How to store data</a>
+              <a href="#" class="py-2 px-4 text-white font-semibold hover:text-white hover:bg-yellow-800">How to provide storage</a>
+            </div>
+
+
+            <!-- Community -->
+            <button class="flex items-center w-full py-2 text-left px-4 font-bold z-50 pl-20 bg-opacity-80 text-white text-lg">
+              <span class="pr-2">
+                Community
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="inline mr-2 h-4 w-4 fill-white"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="hidden flex flex-col pl-24 bg-opacity-80 z-50">
+              <a href="https://twitter.com/freakcloud_zk" class="py-2 px-4 text-white font-semibold hover:text-white ">Twitter</a>
+              <a href="https://discord.gg/yq3H3dWSKX" class="py-2 px-4 text-white font-semibold hover:text-white ">Discord</a>
+
+            </div>
+          </div>
+        </div>
+			
+  
+    
+    <div class="flex justify-center">
+      <div class="grid md:grid-cols-5 grid-cols-1 py-10 sm:pt-20 sm:pl-16 pl-4 max-w-screen-2xl gap-y-4 ">
+        <!--Grid component 2-->
+        <div class=" flex flex-col relative md:order-last order-first md:col-span-2 col-span-1 md:h-auto h-80 lg:pl-10 md:pl-4 md:justify-start items-center justify-center ">
+          <div class=" md:hidden px-4 self-center text-center md:pt-0 mt-10 md:pb-0 pb-8">
+            <span class="text-fcgray fcsupermini:text-3xl text-2xl ">A first-ever </span> <br/>
+            <span class="font-bold text-fcblue fcsupermini:text-3xl text-2xl ">Decentralized Data Storage</span><br/>
+            <span class="font-bold fcsupermini:text-3xl text-2xl ">dapp on zkEVM</span> <br/>
+            <span class="text-fcgray fcsupermini:text-3xl text-2xl ">powered by community</span>
+          </div>
+          <img class="animate-float h-3/5 sm:h-4/5 md:self-center z-10" src="./assets/images/p1-fc-3d.svg"/>
+          <img class="absolute sm:top-1/2 top-3/4 sm:h-1/2 h-4/5 fade" src="./assets/Ellipse1.png"/>
+        </div>
+        <!--Grid component 1-->
+        <div class="grid  items-center md:col-span-3 col-span-1 md:order-first md:pt-0 pt-10">
+          <span>
+            <span class="px-4 xl:text-6xl fcxl:text-5xl fcm:text-4xl md:text-3xl text-3xl md:flex hidden  self-end text-fcgray">A first-ever</span>
+            <span class="px-4 xl:text-6xl fcxl:text-5xl fcm:text-4xl md:text-3xl text-2xl md:flex hidden font-bold self-end pt-1 text-fcblue">Decentralized Data Storage </span>
+            <span class="self-end pt-1 md:flex hidden px-4" >
+              <span class="xl:text-6xl fcxl:text-5xl fcm:text-4xl md:text-3xl text-2xl  font-bold ">dapp on zkEVM</span>
+            </span>
+            <span class="px-4 xl:text-6xl fcxl:text-5xl fcm:text-4xl md:text-3xl text-2xl md:flex hidden text-fcgray self-end pt-1">powered by community</span>
+          </span>
+            <div class="self-start md:pt-3 sm:pt-5 pt-8 px-4 sm:px-6 md:px-4">
+            <span class=" lg:text-xl sm:text-lg text-md font-base h-auto z-50 ">
+              Unlike other decentralized data storages that require their own layer 1 to function, Freak Cloud can run on zkEVM with high performance and gas fee hyper-minimization, thanks to Merkle-tree-based storage proof.
+            </span>
+            
+              <!--button and ending quote container-->
+              <div class="flex md:justify-start justify-center md:pt-6 pt-10">
+                <div class="flex flex-col w-fit ">
+                  <div class="flex sm:gap-4 gap-2 w-fit lg:h-16 h-10">
+                    <!--button 1-->
+                    <button class="flex justify-center">
+                      <div class="flex z-10 w-full h-5/6 bg-black lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border text-white hover:bg-fcblue px-2 sm:px-4 py-7">
+                        <a onclick="document.querySelector('.upload-page').scrollIntoView({ behavior: 'smooth' });" class="inline-block">
+                          Upload and retrieve data
+                        </a>
+                      </div>
+                    </button>
+                    <!--button 2-->
+                    <button class="flex justify-center ">
+                      <div class="flex z-10 w-full h-5/6 bg-btn-white lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border  hover:text-fcblue px-2 sm:px-4 py-7">
+                        <a onclick="document.querySelector('.provide-page').scrollIntoView({ behavior: 'smooth' });" class="inline-block">
+                          Provide storage and earn
+                        </a>
+                      </div>
+                    </button>
+                  </div>
+
+                  <!--Powered by zkSync-->
+                  <div class="self-center pt-6">
+                    <span class="sm:text-base text-sm"> Built on <img class="inline-block sm:h-full h-5/6" src="./assets/images/p1-zksync.svg"/></span> 
+                    <span class="font-bold sm:text-base text-sm">zkSync</span>
+                  </div>             
+                </div>
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!--Header 2-->
+    <div class ="flex justify-center lg:pt-44 pt-20 ">
+      <div class="sm:pl-20 pl-8 w-full max-w-screen-2xl font-bold fcxl:text-5xl p2appear:text-4xl text-3xl">
+        Real utilities </br> for mass adoption of crypto on zkSync
+      </div>
+    </div>
+  
+  
+    <!--Page Slide-->
+    <div class="fcxl:pt-10 pt-0 relative p2appear:flex hidden justify-center items-center app max-h-128 slowfadein  ">
+      
+      <div class="cardList absolute">
+        <!--left button-->
+        <button class="cardList__btn btn btn--left">
+            <div class="icon">
+            <svg>
+                <use xlink:href="#arrow-left"></use>
+            </svg>
+            </div>
+        </button>
+  
+        <div class="cards__wrapper">
+            <div class="card current--card">
+              <div class="card__image">
+                  <img src="./assets/zksync-cecosystem.png" alt="" />
+              </div>
+            </div>
+    
+            <div class="card next--card">
+            <div class="card__image">
+                <img src="./assets/p2-host.png" alt="" />
+            </div>
+            </div>
+    
+            <div class="card previous--card">
+            <div class="card__image">
+                <img src="./assets/p2-upload.png" alt="" />
+            </div>
+            </div>
+        </div>
+        <!--right button-->
+        <button class="cardList__btn btn btn--right">
+            <div class="icon">
+            <svg>
+                <use xlink:href="#arrow-right"></use>
+            </svg>
+            </div>
+        </button>
+      </div>
+  
+      <div class="infoList self-end">
+        <div class="info__wrapper ">
+            <div class="info current--info bg-black bg-opacity-50 fclg:pl-4 pl-8 fcxl:w-1/2 fclg:w-3/5 w-1/2 py-3 ">
+              <h1 class="text name fclg:text-3xl text-xl font-bold text-fclightblue">A whole zkSync ecosystem</h1>
+              <p class="text description fclg:text-lg text-white pt-3">
+               <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+              People and dapps on zkEVM can efficiently interact with Freak Cloud without crosschain solutions and bridging fees</p>
+              <p class="text description fclg:text-lg text-white pt-2">
+               <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+              Interactions are transparent and can be verified on the zkSync explorer</p>
+            </div>
+    
+            <div class="info next--info bg-black bg-opacity-50 fclg:pl-14 pl-8 fclg:pl-4 pl-8 fclg:w-3/5 w-1/2 py-3">
+              <h1 class="text name fclg:text-3xl text-xl font-bold text-fclightblue">Provide storage to earn $FREAKC</h1>
+              <p class="text description fclg:text-lg text-white pt-3">
+                <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+                Store data of users to earn $FREAKC 
+              </p>
+              <p class="text description fclg:text-lg text-white pt-2">
+                <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+                Anyone can become a storage provider, no censorship/whitelist
+              </p>
+              <p class="text description fclg:text-lg text-white pt-2">
+                <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+                Can use multiple devices to provide storage
+              </p>
+            </div>
+
+            <div class="info previous--info bg-black bg-opacity-50 fclg:pl-14 fclg:pl-4 pl-8 fcxl:w-1/2 fclg:w-3/5 w-1/2 py-3">
+              <h1 class="text name fclg:text-3xl text-xl font-bold text-fclightblue">Users want to store data</h1>
+              <p class="text description fclg:text-lg text-white pt-3">
+                <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+                Store data on Freak Cloud with high performance and gas fee hyper-minimization
+              </p>
+              <p class="text description fclg:text-lg text-white pt-2">
+                <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+                Data are encrypted and stored in a decentralized manner by multiple storage providers
+              </p>
+              <p class="text description fclg:text-lg text-white pt-2">
+                <svg class="inline-block w-4 h-4 mr-2 align-middle fill-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5l8 7-8 7z"/>
+                </svg>
+                Pay fees to storage providers with competitive price
+              </p> 
+            </div>
+        </div>
+      </div>
+  
+  
+      <div class="app__bg">
+        <div class="app__bg__image current--image">
+            <img src=""  />
+        </div>
+        <div class="app__bg__image next--image">
+            <img src="" />
+        </div>
+        <div class="app__bg__image previous--image">
+            <img src="" />
+        </div>
+      </div>
+    </div>
+  
+    <!--Slider mobile-->
+  <div class="pt-12 pb-12 ">
+    <div class="min-h-screen p-3 relative p2appear:hidden flex flex-col justify-start">
+      <div class="w-96 mx-auto h-fit" style="scroll-snap-type: x mandatory;">
+        <!-- first -->
+        <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+            <!-- content #1 -->
+            <div
+              class="fcmini:w-96 w-2/3 absolute left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0"
+>
+              <div class="flex justify-center"><img class="rounded-t-lg fcmini:h-4/5 h-2/3 " src="./assets/zksync-cecosystem.png" /></div>
+              <div class="py-4 px-8">
+                  <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight text-center">zkSync ecosystem
+                  </h1>
+                  <p class="hover:cursor-pointer pt-4 text-gray-600 leading-6 fcmini:text-base text-small"> 
+                    <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+              People and dapps on zkEVM can efficiently interact with Freak Cloud without crosschain solutions and bridging fees
+                  </p>
+                  <p class="hover:cursor-pointer pt-2 text-gray-600 leading-6 fcmini:text-base text-small">
+                    <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Interactions are transparent and can be verified on the zkSync explorer
+                  </p>
+              </div>
+              <!-- controls -->
+              <div class="absolute top-72 w-full flex justify-between z-20">
+                  <label for="carousel-3" class="inline-block text-blue-900 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                  <label for="carousel-2" class="inline-block text-blue-900 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+              </div>
+            </div>
+        </div>
+        <!-- second -->
+        <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+            <!-- content #2 -->
+            <div
+              class="fcmini:w-96 w-2/3 absolute left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0"
+>
+              <div class="flex justify-center"><img class="rounded-t-lg fcmini:h-4/5 h-2/3" src="./assets/p2-upload.png" /></div>
+              <div class="py-4 px-8">
+                  <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                    Users want to store data
+                  </h1>
+                  <p class="hover:cursor-pointer pt-4 text-gray-600 leading-6">
+                     <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Store data on Freak Cloud with high performance and gas fee hyper-minimization
+                  </p>
+                  <p class="hover:cursor-pointer pt-2 text-gray-600 leading-6">
+                     <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Data are encrypted and stored in a decentralized manner by multiple storage providers
+                  </p>
+                  <p class="hover:cursor-pointer pt-2 text-gray-600 leading-6">
+                     <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Pay fees to storage providers with competitive price
+                  </p>
+
+              </div>
+              <!-- controls -->
+              <div class="absolute top-72 w-full flex justify-between z-20">
+                  <label for="carousel-1" class="inline-block text-blue-900 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                  <label for="carousel-3" class="inline-block text-blue-900 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+              </div>
+            </div>
+        </div>
+        <!-- three -->
+        <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
+            <!-- content #3 -->
+            <div
+              class="fcmini:w-96 w-2/3 absolute left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0"
+>
+              <div class="flex justify-center"><img class="rounded-t-lg fcmini:h-4/5 h-2/3" src="./assets/p2-host.png" /></div>
+              <div class="py-4 px-8">
+                  <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                    Provide storage to earn $FREAKC
+                  </h1>
+                  <p class="hover:cursor-pointer pt-3 text-gray-600 leading-6">
+                     <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Anyone can become a storage provider, no censorship/whitelist
+                  </p>
+                  <p class="hover:cursor-pointer pt-2 text-gray-600 leading-6">
+                     <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Anyone can become storage provider
+                  </p>
+                  <p class="hover:cursor-pointer pt-2 text-gray-600 leading-6">
+                     <svg class="inline-block w-4 h-4 align-middle fill-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/>
+                    </svg>
+                    Can use multiple devices to provide storage
+                  </p>
+              </div>
+              <!-- controls -->
+              <div class="absolute top-72 w-full flex justify-between z-20">
+                  <label for="carousel-2" class="inline-block text-blue-900 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                  <label for="carousel-1" class="inline-block text-blue-900 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <svg class="icons" style="display: none;">
+      <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+      <polyline points='328 112 184 256 328 400'
+              style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+      <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+      <polyline points='184 112 328 256 184 400'
+              style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+  </svg>       
+  
+
+    
+    <!--Page Freaky Technology-->
+  <div class="flex justify-center">
+    <div class="bg-black md:pb-20 pb-4 max-w-screen-2xl ">
+        <!--pagetech-header-->
+        <div class ="flex justify-center lg:pt-44 pt-20 bg-black ">
+          <div class="sm:pl-8 w-full max-w-screen-2xl font-bold flex justify-center ">
+            <img class=" md:h-14 h-10 h-6" src ="./assets/pagetech-header.png">
+          </div>
+        </div>
+      
+      
+      <!--tech 1-->
+      <div class="flex justify-center pt-4 md:pt-16 sm:pl-16 pl-4 h-fit ">
+        <div class="grid md:grid-cols-2 grid-cols-1 z-20 max-w-screen-2xl h-fit  ">
+          <!--Grid component 2-->
+          <div class=" flex flex-col md:order-last order-first col-span-1 lg:pl-10 md:pl-4 items-center justify-center h-fit">
+            <img class="sm:flex hidden animate-float md:h-80 h-48 md:self-center " src="./assets/smfreakcloud.PNG"/>
+            <img class="sm:hidden flex animate-float md:h-80 h-48 md:self-center " src="./assets/smfreakcloud.PNG"/>
+          </div>
+          <!--Grid component 1-->
+          <div class="flex flex-col z-20  col-span-1 md:order-first  h-fit md:pl-16 lg:pl-40">
+
+            <span class="lg:text-3xl md:text-2xl text-xl md:flex font-bold text-fclightblue md:self-start self-center">zkEVM-based Dapp</span>
+            <div class=" lg:text-3xl md:text-2xl text-xl md:flex md:self-start self-center text-white">No need for a seperate layer 1</div>
+            
+            <div class="flex flex-col self-start md:pt-3 sm:pt-5 pt-2 md:px-0 sm:px-16 px-4 ">
+              <span class=" lg:text-lg sm:text-md fcmini:text-base text-sm h-auto text-fcgray">
+                Freak Cloud stands out from other decentralized data storages as it does not require its own layer 1 to function. 
+              </span>
+
+              <span class=" lg:text-lg sm:text-md fcmini:text-base text-sm h-auto pt-2 text-fcgray">
+                zkSync users can interact directly with Freak Cloud, avoiding additional fees from cross-chain solutions and enhancing security
+              </span>
+              
+              <!--button-->
+              <div class="flex align-middle pt-4 sm:content-start md:justify-start justify-center w-full ">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class=" inline-block h-6 w-6 text-white rounded-full border-2 border-black" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/>
+                </svg>
+                <span style="cursor: pointer;" onclick="window.open('./docs/no_layer_one/', '_blank');" class="lg:text-lg sm:text-md fcmini:text-base text-sm pl-2 text-white">
+                  How is this possible?
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+
+        <!--tech 2-->
+      <div class="flex justify-center pt-4 md:pt-16 sm:pl-16 pl-4 h-fit ">
+        <div class="grid md:grid-cols-2 grid-cols-1 z-20 max-w-screen-2xl h-fit  ">
+          <!--Grid component 2-->
+          <div class=" flex flex-col order-first col-span-1 lg:pl-10 md:pl-2 items-center justify-center h-fit">
+            <img class="sm:flex hidden animate-float md:h-56 h-48 md:self-center " src="./assets/smmerkle.PNG"/>
+            <img class="sm:hidden flex animate-float md:h-56 sm:h-48 h-32 md:self-center " src="./assets/smmerkle.PNG"/>
+          </div>
+          <!--Grid component 1-->
+          <div class="flex flex-col z-20  col-span-1 order-last   h-fit md:pr-16 lg:pr-40">
+
+            <span class="lg:text-3xl md:text-2xl text-xl md:flex font-bold text-fclightblue md:self-start self-center">Merkle-tree storage proof </span>
+            <div class=" lg:text-3xl md:text-2xl text-xl md:flex md:self-start self-center text-white ">Hyper gas fee minimization</div>
+            
+            <div class="flex flex-col self-start md:pt-3 sm:pt-5 pt-2 md:px-0 sm:px-16 px-4 ">
+              <span class=" lg:text-lg sm:text-md fcmini:text-base text-sm h-auto text-fcgray">
+                Freak Cloud integrates a unique Merkle-tree-based proof of storage protocol, ensuring that data is properly stored and significantly reducing verification cost and proof sizes.
+              </span>
+              <span class=" lg:text-lg sm:text-md fcmini:text-base text-sm h-auto pt-2 text-fcgray italic">
+                For example, if a direct verification normally needs 1000000 instructions, Merkle proof just needs log2(1000000) = 19.93 instructions.
+              </span>
+              
+              <!--button-->
+              <div class="flex align-middle pt-4 sm:content-start md:justify-start justify-center w-full ">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class=" inline-block h-6 w-6 text-white rounded-full border-2 border-black" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/>
+                </svg>
+                <span style="cursor: pointer;" onclick="window.open('./docs/components/merkle', '_blank');" class="lg:text-lg sm:text-md fcmini:text-base text-sm pl-2 text-white">
+                  What is Merkle-tree storage proof? 
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+
+      <!--tech 3-->
+      <div class="flex justify-center pt-4 md:pt-16 sm:pl-16 pl-4 h-fit ">
+        <div class="grid md:grid-cols-2 grid-cols-1 z-20 max-w-screen-2xl h-fit  ">
+          <!--Grid component 2-->
+          <div class=" flex flex-col md:order-last order-first col-span-1 lg:pl-10 md:pl-4 items-center justify-center h-fit">
+            <img class="sm:flex hidden animate-float md:h-64 h-48 md:self-center " src="./assets/smmodel.png"/>
+            <img class="sm:hidden flex animate-float md:h-64 h-48 md:self-center " src="./assets/smmodel.png"/>
+          </div>
+          <!--Grid component 1-->
+          <div class="flex flex-col z-20  col-span-1 md:order-first  h-fit md:pl-16 lg:pl-40">
+
+            <span class="lg:text-3xl md:text-2xl text-xl md:flex font-bold text-fclightblue md:self-start self-center">Incentivization model</span>
+            <div class=" lg:text-3xl md:text-2xl text-xl md:flex md:self-start self-center text-white">A trustless safe model</div>
+            
+            <div class="flex flex-col self-start md:pt-3 sm:pt-5 pt-2 md:px-0 sm:px-16 px-4 ">
+              <span class=" lg:text-lg sm:text-md fcmini:text-base text-sm h-auto text-fcgray">
+                An on-chain system eliminates frauds, incentivizing storage providers to give out best service.
+                <br/>
+                The model tackle data withholding problems in Filecoin and Arweave(storage providers submit storage proof but do not send data to users), ensuring data availability at any time.
+              </span>
+
+          
+
+              
+              <!--button-->
+              <div class="flex align-middle pt-4 sm:content-start md:justify-start justify-center w-full ">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class=" inline-block h-6 w-6 text-whiterounded-full border-2 border-black text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/>
+                </svg>
+                <span style="cursor: pointer;" onclick="window.open('./docs/components/incentivization', '_blank');" class="lg:text-lg sm:text-md fcmini:text-base text-sm pl-2 text-white">
+                  Learn about the mechanism
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+
+      <!--tech 4-->
+      <div class="flex justify-center pt-4 md:pt-16 sm:pl-16 pl-4 h-fit ">
+        <div class="grid md:grid-cols-2 grid-cols-1 z-20 max-w-screen-2xl h-fit  ">
+          <!--Grid component 2-->
+          <div class=" flex flex-col order-first col-span-1 lg:pl-10 md:pl-4 items-center justify-center h-fit">
+            <img class="sm:flex hidden animate-float md:h-80 h-48 md:self-center " src="./assets/smprice.PNG"/>
+            <img class="sm:hidden flex animate-float md:h-80 h-48 md:self-center " src="./assets/smprice.PNG"/>
+          </div>
+          <!--Grid component 1-->
+          <div class="flex flex-col z-20  col-span-1 order-last   h-fit md:pr-16 lg:pr-40">
+
+            <span class="lg:text-3xl md:text-2xl text-xl md:flex font-bold text-fclightblue md:self-start self-center">An order book for storage price</span>
+            <div class=" lg:text-3xl md:text-2xl text-xl md:flex text-white md:self-start self-center ">Placing spot/market orders for storage pricing</div>
+            
+            <div class="flex flex-col self-start md:pt-3 sm:pt-5 pt-2 md:px-0 sm:px-16 px-4 ">
+              <span class=" lg:text-lg sm:text-md fcmini:text-base text-sm h-auto text-fcgray">
+                An on-chain system where users and storage providers can place spot or market orders for storage pricing. This system matches users with providers, fostering a free market for storage.
+              </span>
+              
+              <!--button-->
+              <div class="flex align-middle pt-4 sm:content-start md:justify-start justify-center w-full ">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class=" inline-block h-6 w-6 text-white rounded-full border-2 border-black" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/>
+                </svg>
+                <span style="cursor: pointer;" onclick="window.open('./docs/components/pricing', '_blank');" class="lg:text-lg sm:text-md fcmini:text-base text-sm pl-2 text-white">
+                  Explore more 
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Freak CLoud Comparision Page-->
+  <div class="flex justify-center slowfadein">
+    <div class ="flex flex-col justify-center items-center lg:pt-44 pt-4 sm:pl-20 sm:pl-4 pl-2 sm:pr-4 pr-2 w-full max-w-screen-2xl ">
+      <!--Header Comparision Page-->
+      <div class ="flex justify-center ">
+        <div class="font-bold fcxl:text-5xl lg:text-3xl p2appear:text-xl fcmini:text-base">
+          Freak Cloud compared to other existing solutions
+        </div>
+      </div>    
+      
+      <img src="./assets/table.png" class="slowfadein lg:pt-20 md:pt-10 pt-4 w-5/6 " />
+
+    </div>
+  </div>
+  
+  <!--Reason Page-->
+    <div class="">
+      <!--Header 2-->
+      <div class ="flex justify-center lg:pt-44 pt-20 ">
+        <div class="sm:pl-20 pl-8 w-full max-w-screen-2xl font-bold fcxl:text-5xl p2appear:text-4xl text-3xl">
+          Why choose Freak Cloud
+        </div>
+      </div>
+  
+      <div class ="lg:mt-0 mt-0 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto w-full px-5 sm:pt-20 pt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:gap-x-16 lg:gap-y-10 md:gap-x-10 features">
+          <!--Feature card 1-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl ">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/inovation.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+              Innovation
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                Freak Cloud is the first-ever decentralized data storage being able to run on zkEVM enviroment.
+              </p>
+            </div>
+          </div>
+          <!--Feature card 2-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Decentralization.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Decentralization
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                User data is anonymously stored by multiple storage providers, and anyone can become a storage provider. Freak Cloud fosters true decentralization in data storage. 
+              </p>
+            </div>
+          </div>
+
+          <!--Feature card 3-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Competitive.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Competitive storage price
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                Uncensored storage pricing determined by users and providers. An order book system lets users and providers place market or spot price orders for storage, seamlessly matching supply and demand.
+              </p>
+            </div>
+          </div>
+          <!--Feature card 4-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl ">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Exclusive.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+              Exclusive for zkSync
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                Users and dapps on zkSync can securely and efficiently interact with Freak Cloud without the need for cross-chain communication and bridge fees. 
+              </p>
+            </div>
+          </div>
+          <!--Feature card 5-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Efficiency.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Efficiency
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                By being compatible with zk-rollup of zkSync and using Merkle-tree proofs, Freak Cloud is able to achieve high performance and hyper gas fee minimization. 
+              </p>
+            </div>
+          </div>
+
+          <!--Feature card 6-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Scability.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Scability
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                A combination of zkSync environment, storage cryptographic proof and incentivization model allows Freak Cloud to achieve high and sustainable scaling.
+              </p>
+            </div>
+          </div>
+
+          <!--Feature card 7-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Security.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Security and privacy
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                Data uploaded by users are encrypted. There is no KYC or whatsoever, information of users and storage providers are anounymous.
+              </p>
+            </div>
+          </div>
+          <!--Feature card 8-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl ">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Reliable.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Reliable
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                A trustless model systematically eradicates fraudulent activities, solves data witholding problems and ensures providers give out best service for users.
+              </p>
+            </div>
+          </div>
+          <!--Feature card 9-->
+          <div class ="md:block flex md:p-11 py-5 pl-5 pr-1 md:h-75 h-26 md:w-83.5 mx-auto lg:mb-0 sm:mb-6 mb-2 css-scale shadow-medium w-full bg-fclinear rounded-xl">
+            <img className="lg:w-auto w-16 md:mb-4 md:mr-0 mr-2" src="./assets/Simplicity.svg" />
+            <div>
+              <h1 class="mb-2 md:leading-6.5 text-xl font-bold text-white">
+                Simplicity
+              </h1>
+              <p class ="md:leading-5 md:text-sm text-10px text-white">
+                Freak Cloud delivers a seamless, fast, and user-friendly experience through its simple interface for crypto and non-crypto users.
+              </p>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+
+    <!--Page upload data-->
+    <div class="upload-page flex justify-center pt-20">
+      <div class=" md:pb-20 pb-4 max-w-screen-2xl w-full ">
+        <!--tech 1-->
+        <div class="flex justify-center pt-4 md:pt-16 h-fit ">
+          <div class="grid md:grid-cols-2 grid-cols-1 z-20 max-w-screen-2xl h-fit items-center ">
+            <!--Grid component 2-->
+            <div class=" flex flex-col md:order-last order-first col-span-1 lg:pl-20 md:pl-4 items-center justify-center h-fit">
+              <img class="sm:flex hidden animate-float md:h-96 h-60 md:self-center " src="./assets/uploaddata.png"/>
+              <img class="sm:hidden flex animate-float md:h-96 h-60 md:self-center " src="./assets/uploaddata.png"/>
+            </div>
+            <!--Grid component 1-->
+            <div class="flex flex-col z-20  col-span-1 md:order-first  h-fit ">
+              <span class="fcsupermini:text-5xl text-4xl font-bold md:self-start self-center text-fcblue">
+                Upload,</br>retrieve data
+              </span>
+              <div class="flex flex-col self-start md:pt-3 sm:pt-5 pt-2 md:px-0 sm:px-16 px-4 ">
+                <!--button-->
+                <div class="grid grid-cols-2 sm:gap-2 gap-1 w-fit h-fit ">
+                  <!--button 1-->
+                  <button onclick="window.open('./download.html', '_blank');" class="flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border text-white hover:bg-fcblue px-2 bg-black sm:px-4 py-3">
+                      <a href="./download.html"  class="inline-block">
+                        Get started
+                      </a>
+                    </div>
+                  </button>
+                  <!--button 2-->
+                  <button class=" flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 bg-btn-white lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border  hover:text-fcblue px-2 sm:px-4 py-3">
+                      <a href="./docs" target="_blank" class="inline-block">
+                        Learn the tech
+                      </a>
+                    </div>
+                  </button>
+                  <!--button 1-->
+                  <button class="spbtn flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border px-2 sm:px-4 py-3">
+                      <a class="inline-block">
+                        How to use
+                      </a>
+                    </div>
+                  </button>
+                  <!--button 2-->
+                  <button class="spbtn flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 bg-btn-white lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border  hover:text-fcblue px-1 sm:px-2 py-3">
+                      <a class="inline-block">
+                        Developer docs
+                      </a>
+                    </div>
+                  </button>                  
+                </div>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Page Provide storage-->
+    <div class="provide-page flex justify-center pt-20">
+      <div class=" md:pb-20 pb-4 max-w-screen-2xl w-full ">
+        <div class="flex justify-center pt-4 md:pt-16 h-fit ">
+          <div class="grid md:grid-cols-2 grid-cols-1 z-20 max-w-screen-2xl h-fit items-center ">
+            <!--Grid component 2-->
+            <div class=" flex flex-col order-first col-span-1 items-center justify-center h-fit">
+              <img class="sm:flex hidden animate-float md:h-80 h-60 md:self-center " src="./assets/provide-storage.png"/>
+              <img class="sm:hidden flex animate-float md:h-80 h-60 md:self-center " src="./assets/provide-storage.png"/>
+            </div>
+            <!--Grid component 1-->
+            <div class="flex flex-col z-20  col-span-1 order-last h-fit lg:pl-10 md:pl-4 ">
+              <span class="fcsupermini:text-5xl text-4xl font-bold md:self-start self-center text-fcblue">
+                Provide storage, </br> Earn $FREAKC
+              </span>
+              <div class="flex flex-col self-center md:pt-3 sm:pt-5 pt-2 md:px-0 sm:px-16 px-4 ">
+                <!--button-->
+                <div class="grid grid-cols-2 sm:gap-2 gap-1 w-fit h-fit ">
+                  <!--button 1-->
+                  <button class="flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border text-white hover:bg-fcblue bg-black px-1 sm:px-2  py-3">
+                      <a href="./download.html" class="inline-block">
+                        Download node
+                      </a>
+                    </div>
+                  </button>
+                  <!--button 2-->
+                  <button class="flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 bg-btn-white lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border  hover:text-fcblue px-2 sm:px-4 py-3">
+                      <a href="./docs" target="_blank" class="inline-block">
+                        Learn the tech
+                      </a>
+                    </div>
+                  </button>
+                  <!--button 3-->
+                  <button class="spbtn flex justify-center col-span-1 ">
+                    <div class="flex z-10 w-full h-5/6 lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border px-2 sm:px-4 py-3">
+                      <a class="inline-block">
+                        How to use
+                      </a>
+                    </div>
+                  </button>
+                  <!--button 4-->
+                  <button class="spbtn flex justify-center col-span-1">
+                    <div class="flex z-10 w-full h-5/6 bg-btn-white lg:text-lg md:text-md text-sm font-bold self-center items-center justify-center rounded-xl border-black border  hover:text-fcblue px-1 sm:px-2  py-3">
+                      <a class="inline-block">
+                        Developer docs
+                      </a>
+                    </div>
+                  </button>                  
+                </div>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="flex justify-center pt-40">
+      <div class=" flex flex-col max-w-screen-2xl w-full bg-fcfooter pt-20 ">
+        <!--Grid containers-->
+        <div class ="grid md:grid-cols-4 grid-cols-2 gap-x-2 gap-y-4 w-full pb-6 justify-items-center">
+          <!--Materials grid-->
+          <div class="grid grid-cols-1 col-span-1 pr-12">
+            <span class="text-white text-xl pb-2 font-bold">Materials</span>
+            <span style="cursor: pointer;" onclick="window.open('./docs', '_blank');" class="text-white text-base hover:text-fcblue">Documentation</span>
+            <span style="cursor: pointer;"  class="text-white text-base hover:text-gray-600">Developer docs</span>
+            <span style="cursor: pointer;" class="text-white text-base hover:text-gray-600">Github</span>
+          </div>
+          <!--Learn grid-->
+          <div class="grid grid-cols-1 col-span-1 pr-20">
+            <span class="text-white text-xl pb-2 font-bold">Learn</span>
+            <span style="cursor: pointer;" class="text-white text-base hover:text-gray-600">Quick start</span>
+            <span style="cursor: pointer;" class="text-white text-base hover:text-gray-600">Whitepaper</span>
+            <span style="cursor: pointer;" onclick="window.open('./blog.html', '_blank');" class="text-white text-base hover:text-fcblue">Blog</span>
+          </div>          
+          <!-- grid-->
+          <div class="grid grid-cols-1 col-span-1">
+            <span class="text-white text-xl pb-2 font-bold">How to use</span>
+            <span style="cursor: pointer;" class="text-white text-base hover:text-gray-600">How to store data</span>
+            <span style="cursor: pointer;" class="text-white text-base hover:text-gray-600">How to provide storage</span>
+            <span class="h-2"></span>
+          </div> 
+          <!--Contact grid-->
+          <div class="grid grid-cols-1 col-span-1 ">
+            <span class="text-white text-xl pb-2 font-bold">Contact</span>
+            <span class="text-white text-base">contact@freakcloud.io</span>
+            <span class="text-white text-base"></span>
+            <span class="text-white text-base"></span>
+          </div>          
+        </div>
+        
+        <!--Social icons-->
+        <div class="flex justify-center py-4 border-b-2">
+          <div class="flex h-8">
+            <img style="cursor: pointer;" onclick="window.open('https://twitter.com/freakcloud_zk', '_blank');" class="px-1 " src="./assets/twitter.svg"/>
+            <img style="cursor: pointer;" onclick="window.open('https://discord.gg/yq3H3dWSKX', '_blank');" class="px-1" src="./assets/discord.svg"/>
+          </div>  
+        </div> 
+        <!--Ending-->
+        <div class="flex justify-center py-4 ">
+          <span class="text-white">
+            © Freak Cloud 2023, All rights reserved.
+          </span>  
+        </div> 
+
+      </div>
+    </div>
+  
+  
+  </div>
+
+
+
+</body>
+  <script src="versioning.js"></script>
+  <!--Slider-->
+  <script src ="p2slider.js">
+    
+  </script>
+
+  <!--material Dropdown hover-->
+  <script>
+    const dropdownContainer = document.getElementById('dropdown-container');
+    const dropdown = document.getElementById('dropdown');
+
+    dropdownContainer.addEventListener('mouseover', () => {
+      dropdown.classList.remove('hidden');
+    });
+
+    dropdownContainer.addEventListener('mouseleave', () => {
+      dropdown.classList.add('hidden');
+    });
+  </script>
+
+  <!--Learn Dropdown hover-->
+  <script>
+    const dropdownContainer2 = document.getElementById('dropdown-container2');
+    const dropdown2 = document.getElementById('dropdown2');
+
+    dropdownContainer2.addEventListener('mouseover', () => {
+      dropdown2.classList.remove('hidden');
+    });
+
+    dropdownContainer2.addEventListener('mouseleave', () => {
+      dropdown2.classList.add('hidden');
+    });
+  </script>
+
+  <!--How to use Dropdown hover-->
+  <script>
+    const dropdownContainer3 = document.getElementById('dropdown-container3');
+    const dropdown3 = document.getElementById('dropdown3');
+
+    dropdownContainer3.addEventListener('mouseover', () => {
+      dropdown3.classList.remove('hidden');
+    });
+
+    dropdownContainer3.addEventListener('mouseleave', () => {
+      dropdown3.classList.add('hidden');
+    });
+  </script>
+
+  <!-- Get started dropdown toggle script -->
+  <script>
+    const getStartedDropdownContainer = document.getElementById('get-started-dropdown-container');
+    const getStartedButton = document.getElementById('get-started-button');
+    const getStartedDropdown = document.getElementById('get-started-dropdown');
+
+    getStartedButton.addEventListener('click', () => {
+      getStartedDropdown.classList.toggle('hidden');
+    });
+
+    // Close the dropdown when clicking outside of it
+    window.addEventListener('click', (event) => {
+      if (!getStartedDropdownContainer.contains(event.target)) {
+        getStartedDropdown.classList.add('hidden');
+      }
+    });
+  </script>
+
+  <!--Mobi-menu toggle-->
+  <script>
+   function toggleMenu() {
+  const overlay = document.getElementById('fullscreen-overlay');
+  const mobileNavbar = document.getElementById('mobile-navbar');
+  const menuBtn = document.querySelector('.mobile-menu-button.overlay-menu-btn');
+
+  // Toggle the full-screen overlay
+  overlay.classList.toggle('opacity-0');
+  overlay.classList.toggle('pointer-events-none');
+
+  // Toggle the mobile navigation bar
+  mobileNavbar.classList.toggle('hidden');
+
+  // Change the mobile menu button to an "X" when the menu is open
+  menuBtn.classList.toggle('active');
+}
+
+
+const mobileNavbar = document.getElementById('mobile-navbar');
+const buttons1 = mobileNavbar.getElementsByTagName('button');
+
+for (const button of buttons1) {
+    button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        console.log("Clicked");
+
+        const dropdown = button.nextElementSibling;
+
+        // Close other open dropdowns
+        for (const siblingButton of buttons1) {
+            if (siblingButton !== button) {
+                const siblingDropdown = siblingButton.nextElementSibling;
+                siblingDropdown.classList.add('hidden');
+            }
+        }
+
+        // Toggle the clicked dropdown
+        dropdown.classList.toggle('hidden');
+    });
+}
+
+  </script>
+
+  <!--Mobile button style-->
+  <style>
+    .mobile-menu-button.overlay-menu-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        padding-right: 60px;
+    }
+
+    .mobile-menu-button.overlay-menu-btn .overlay-menu-line {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        transform-origin: center;
+        transition: transform 0.5s;
+
+
+    }
+
+
+    .mobile-menu-button.overlay-menu-btn .overlay-menu-line1 {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .mobile-menu-button.overlay-menu-btn .overlay-menu-line2 {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .mobile-menu-button.overlay-menu-btn.active .overlay-menu-line1 {
+        transform: translate(-50%, -200%) rotate(45deg);
+        background-color: white;
+    }
+
+    .mobile-menu-button.overlay-menu-btn.active .overlay-menu-line2 {
+        transform: translate(-50%, 200%) rotate(-45deg);
+        background-color: white;
+    }
+  </style>
+
+
+
+
+
+  <!-- Comming soon button -->
+  <script>
+    for (const button of document.querySelectorAll(".spbtn")) {
+      const textHolder = button.querySelector("a");
+
+      const ogText = textHolder.innerText;
+
+      button.onmouseover = function() {
+        textHolder.innerText = "Coming soon";
+      }
+
+      button.onmouseout = function() {
+        textHolder.innerText = ogText;
+      }
+    }
+  </script>
+
+</html>
