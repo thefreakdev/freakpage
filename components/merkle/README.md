@@ -1,0 +1,9 @@
+# Merkle Tree-Based Proof
+
+Our system stands out by integrating a Merkle proof system to ensure correctness from both the user and the provider, boasting an extremely small proof size and low verification cost. 
+
+Verification with a Merkle proof can be done in log2(n) of computational cost and data size, while n represents the normal verification cost and data size. For instance, if direct verification typically requires 1,000,000 instructions, our Merkle proof only needs log2(1,000,000) = 20 instructions.
+
+Here's how it works: During the contract creation process between the user and the provider, both parties break down the full data into smaller chunks (about 32 bytes each), generate a hash for each chunk, and then build a Merkle tree from these hashes. The user uploads the tree's root on-chain to the contract, and the provider can decide to accept the contract if the root is accurate. The user only needs to randomly select a chunk hash and a Merkle path from that hash to the root, meaning they only need to store a tiny piece of data to challenge the provider if they suspect any wrongdoing.
+
+To initiate a check on whether the provider is properly storing the user's data (referred to as a "challenge"), the user submits a chunk hash and a Merkle path leading to the root. The contract generates a new root from these hashes, and if the new root matches the stored root, it proceeds with the challenge. This process ensures that the user is not cheating, and the focus shifts to the provider. The provider must then submit a chunk to the contract, which hashes it and compares it to the stored hash submitted by the user. If the hashes match, the provider is considered to be properly storing data, and their bonds remain unaffected. However, if the provider fails to submit a correct chunk within a one-day period, the user has the option to remove their bonds and terminate the contract.

@@ -1,0 +1,5 @@
+# Cryptographic Data Storage Proof
+
+To guarantee that storage providers store the data and don't commit fraud while running their nodes, Freak Cloud employs a data storage proof system. Storage providers must periodically submit storage proof for the data they have stored to the Freak Cloud Contract on zkEVM, which automatically verifies it on-chain. If the proof is valid, the storage provider is fine, but if not, the provider will be penalized.
+
+Users can also verify whether their data is being stored correctly. They submit a random chunk hash generated from a chunk of the original data to the contract (the user doesn't store the entire data, only the much smaller chunk hashes). The provider then submits the chunk's data to the contract, which hashes the submitted chunk and compares it to the hash submitted by the user. If they match, the challenge ends, and the provider is fine. If the provider can't submit a correct chunk within one day, the user has the option to delete their bonds and terminate the contract.
